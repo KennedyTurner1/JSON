@@ -13,6 +13,8 @@ list_of_eqs = eq_data['features'] #we want a list of all of the earthquakes. eq_
 
 print(type(list_of_eqs)) #output: <class 'list'>
 
+print("hello world.")
+
 print(len(list_of_eqs)) #the length of that list is how many earthquakes we have.
 
 mags, lons, lats = [], [], [] #create three empty lists
