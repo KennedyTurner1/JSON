@@ -1,12 +1,10 @@
 import json
 
-infile  = open('US_fires_9_1.json', 'r')
+infile  = open('US_fires_9_14.json', 'r')
 
 fire_data = json.load(infile)
 
 lats, lons, brights = [], [], []
-
-#print(fire_data)
 
 for fire in fire_data: #for dictionary in list fire_data
     bright = float(fire['brightness'])
@@ -35,8 +33,8 @@ data =[{
     }
 }]
 
-my_layout = Layout(title='2020 Fires between September 1-13')
+my_layout = Layout(title='2020 Fires between September 14-20')
 
 fig = {'data': data, 'layout':my_layout}
 
-offline.plot(fig, filename='US_Fires_9_1.html')
+offline.plot(fig, filename='US_Fires_9_14.html')
